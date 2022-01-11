@@ -1,0 +1,123 @@
+/* pages/music_like/music_like.wxss */
+.beijing{
+  height: 400rpx;
+  width: 400rpx;
+  position: absolute;
+  z-index: -100;
+  top: 500rpx;
+  left: 200rpx;
+  opacity: 0.5;
+}
+
+.kuang{
+  border-bottom: 1rpx solid gainsboro;
+  height: 300rpx;
+  width: 750rpx;
+  display: flex;
+}
+
+.kk{
+  border: 1rpx solid gainsboro;
+  height: 250rpx;
+  width: 250rpx;
+  border-radius: 20px;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.kk image{
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 20px;
+  opacity: 0.8;
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+}
+.kkt{
+  border-bottom: 1rpx solid gainsboro;
+  height:300rpx;
+  width: 480rpx;
+}
+.li{
+ margin-top: 40rpx;
+  margin-left: 70rpx;
+  font-size: 16px;
+}
+.rr{
+  border: 1rpx solid transparent;
+  height: 60rpx;
+  width: 160rpx;
+  display: flex;
+  margin-top: 30rpx;
+  margin-left: 60rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.rrImage{
+height: 60rpx;
+width: 60rpx;
+border-radius: 50%;
+overflow: hidden;
+}
+.rrImage image{
+  height: 100%;
+  width: 100%;
+}
+
+.im{
+  height: 100rpx;
+  width: 100rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  border-radius: 10px;
+}
+
+.likeNav{
+  width: 750rpx;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+}
+.nav{
+  padding: 8px 75px;
+  letter-spacing: 1px;
+}
+.navBot{
+  border-bottom:2px solid rgb(253,89,124);
+}
+
+.like{
+  display: flex;
+  align-items: center;
+}
+.tex{
+  border-bottom: 1rpx solid gainsboro;
+  height: 120rpx;
+  width: 500rpx;
+  margin-left: 20rpx;
+  line-height: 120rpx;
+}
+.ima{
+  border-bottom: 1rpx solid gainsboro;
+  height: 120rpx;
+  width: 100rpx;
+  line-height: 120rpx;
+}
+.ima image{
+  height: 40rpx;
+  width: 40rpx;
+  margin-left: 30rpx;
+  opacity: 0.8
+}
+.ip1{
+  font-size: 16px;
+  padding-top: 20rpx;
+  margin-left: 20rpx;
+  overflow: hidden;
+}
+.ip2{
+  font-size: 14px;
+  margin-left: 20rpx;
+  color: gray
+}

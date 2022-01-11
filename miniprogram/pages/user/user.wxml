@@ -1,0 +1,77 @@
+<!--pages/user/user.wxml-->
+<view class="topImg">
+  <view class="userAvatarUrl">
+    <image src="{{AvatarUrl}}"></image>
+  </view>
+  <view class="userAvatar">
+    <image src="{{AvatarUrl}}"></image>
+  </view>
+  <view class="userNickName"> {{nickName}}</view>
+
+</view>
+<view class="content">
+  <view class="contentItems">
+    <view class="Item" bindtap="music">
+      <view class="itemLeft">
+        <view class="itemImg">
+          <image src="/images/music_2.png"></image>
+        </view>
+        <view class="itemText">音乐</view>
+      </view>
+      <view class="itemIcon">
+        <image src="/images/you.png"></image>
+      </view>
+    </view>
+    <view class="Item" bindtap="video">
+      <view class="itemLeft">
+        <view class="itemImg">
+          <image src="/images/video_2.png"></image>
+        </view>
+        <view class="itemText">视频</view>
+      </view>
+      <view class="itemIcon">
+        <image src="/images/you.png"></image>
+      </view>
+    </view>
+    <view id="itemBottom" bindtap="book" class="Item">
+      <view class="itemLeft">
+        <view class="itemImg">
+          <image src="/images/book_2.png"></image>
+        </view>
+        <view class="itemText">小说</view>
+      </view>
+      <view class="itemIcon">
+        <image src="/images/you.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 我的音乐 -->
+  <view class="myMusic" bindtap="like">
+    <view id="itemBottom" class="Item">
+      <view id="itemLeft" class="itemLeft">
+        <view class="itemImg">
+          <image src="/images/like.png"></image>
+        </view>
+        <view class="itemText">我的音乐</view>
+      </view>
+      <view class="itemIcon">
+        <image src="/images/you.png"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 我的书架 -->
+  <view class="myMusic" bindtap="bookshelf">
+    <view id="itemBottom" class="Item">
+      <view id="itemLeft" class="itemLeft">
+        <view class="itemImg">
+          <image src="/images/fenlei.png"></image>
+        </view>
+        <view class="itemText">我的书架</view>
+      </view>
+      <view class="itemIcon">
+        <image src="/images/you.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

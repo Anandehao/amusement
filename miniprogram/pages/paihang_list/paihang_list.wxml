@@ -1,0 +1,7 @@
+<!--pages/bang_list/bang_list.wxml-->
+
+<image class='im' src='{{im3}}'></image>
+<view bindtap='play' data-id="{{index}}" data-hash='{{item.hash}}' wx:for="{{music_list}}" wx:key="index" class='kuang'>
+  <input class='ip1' disabled value='{{item.music}}'></input>
+  <input class='ip2' disabled value='{{item.name}}'></input>
+</view>

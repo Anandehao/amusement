@@ -1,0 +1,90 @@
+/* pages/gedan_list/gedan_list.wxss */
+.gd{
+  height: 100vh;
+  width: 750rpx;
+  padding: 10px;
+}
+
+.mian {
+  height: 100vh;
+  width: 750rpx;
+}
+
+.im2 {
+  height: 100vh;
+  width: 750rpx;
+  opacity: 0.3;
+  position: absolute;
+  z-index: -100;
+  top: 0rpx;
+}
+
+.kuang {
+  height: 300rpx;
+  width: 750rpx;
+  display: flex;
+}
+
+.ku1 {
+  height: 300rpx;
+  width: 300rpx;
+}
+
+.ku2 {
+  height: 300rpx;
+  width: 450rpx;
+}
+
+.im1 {
+  height: 250rpx;
+  width: 250rpx;
+  border-radius: 20px;
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+}
+
+.ku3 {
+  width: 450rpx;
+  height: 150rpx;
+}
+
+.ku4 {
+  width: 450rpx;
+  height: 150rpx;
+  display: flex;
+}
+
+textarea {
+  height: 100rpx;
+  width: 400rpx;
+  margin-top: 50rpx;
+  font-size: 15px;
+}
+
+.ku4 image {
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 100%;
+}
+
+.ku4 input {
+  font-size: 12px;
+  width: 250rpx;
+  margin-left: 20rpx;
+}
+
+.ku5{
+  border-bottom: 1rpx solid gainsboro;
+  height: 130rpx;
+  width: 750rpx;
+}
+
+.in1{
+  margin-left: 25rpx;
+  font-size: 16px;
+  margin-top: 30rpx;
+}
+.in2{
+  margin-left: 40rpx;
+  font-size: 14px;
+}

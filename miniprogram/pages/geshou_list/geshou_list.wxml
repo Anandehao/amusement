@@ -1,0 +1,36 @@
+<!--pages/geshou_list/geshou_list.wxml-->
+<view class='kk'>
+  <image src='{{imgurl}}'></image>
+  <text>{{name}}</text>
+</view>
+
+<view wx:if="{{tt1}}">
+<view class='kk2'>
+  <view class='ku1'>
+    <view class='gd'>
+      <text>歌单</text>
+    </view>
+  </view>
+  <view bindtap='gd' class='ku1'>
+    <text>详情</text>
+  </view>
+</view>
+<view bindtap='play' data-id="{{index}}" data-hash='{{item.hash}}' class='tjk' wx:for="{{music_list}}" wx:key="index">
+  <input class='tji' disabled value='{{item.name}}'></input>
+  <input class='tji2' disabled value='{{name}}'></input>
+</view>
+</view>
+
+<view wx:if="{{tt2}}">
+<view class='kk2'>
+  <view bindtap='xq' class='ku1'>
+    <text>歌单</text>
+  </view>
+  <view class='ku1'>
+    <view class='gd'>
+      <text>详情</text>
+    </view>
+  </view>
+</view>
+<view class='xq'>{{intro}}</view>
+</view>

@@ -1,0 +1,23 @@
+.tt image{
+  height: 100vh;
+  width: 750rpx;
+}
+.tt text{
+  position: absolute;
+  left: 180rpx;
+  top: 100rpx;
+  font-size: 50px;
+  color: rgb(249,250,254);
+  font-weight: 900;
+  letter-spacing: 10px;
+}
+.tt button{
+  position: absolute;
+  top: 1070rpx;
+  width: 550rpx;
+  left: 100rpx;
+  background-color: rgb(230, 230, 230);
+  color: rgb(48,58,57) ;
+  font-weight: 900;
+  letter-spacing: 5px;
+}

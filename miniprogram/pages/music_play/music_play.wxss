@@ -1,0 +1,114 @@
+/* pages/music_play/music_play.wxss */
+
+.bj {
+  height: 500rpx;
+  width: 500rpx;
+  border-radius: 100%;
+  position: absolute;
+  top: 150rpx;
+  left: 125rpx;
+}
+
+.tt {
+  height: 1200rpx;
+  width: 750rpx;
+}
+
+.i1 {
+  height: 100%;
+  width: 750rpx;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -20;
+}
+
+.i2 {
+  height: 500rpx;
+  width: 500rpx;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 100;
+  top: 150rpx;
+  left: 125rpx;
+  box-shadow: 1rpx 10rpx 100rpx white;
+}
+
+.i3 {
+  height: 80rpx;
+  width: 80rpx;
+  position: absolute;
+  z-index: 100;
+  top: 1000rpx;
+  left: 340rpx;
+}
+
+.i4 {
+  height: 80rpx;
+  width: 80rpx;
+  position: absolute;
+  z-index: 100;
+  top: 1000rpx;
+  left: 500rpx;
+}
+
+.i5 {
+  height: 80rpx;
+  width: 80rpx;
+  position: absolute;
+  z-index: 100;
+  top: 1000rpx;
+  left: 180rpx;
+}
+
+.nana{
+  font-size: 14px;
+}
+
+.name {
+  height: 100rpx;
+  width: 750rpx;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 60rpx;
+}
+
+.kk1 {
+  height: 100rpx;
+  width: 25rpx;
+}
+
+.kk2 {
+  height: 40rpx;
+  width: 700rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.gdt{
+  width: 400rpx;
+  position: absolute;
+  z-index: 101;
+  top: 900rpx;
+  left: 150rpx;
+}
+.xin{
+  position: absolute;
+  top: 850rpx;
+  left: 600rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+.q{
+  position: absolute;
+  top: 920rpx;
+  left: 75rpx;
+  font-size: 15px;
+}
+.h{
+  position: absolute;
+  top: 920rpx;
+  left: 595rpx;
+  font-size: 15px;
+}
+

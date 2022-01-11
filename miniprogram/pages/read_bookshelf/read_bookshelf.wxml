@@ -1,0 +1,10 @@
+<!--pages/read_bookshelf/read_bookshelf.wxml-->
+<view class="bookNum">您的藏书共{{booksNum}}本</view>
+
+<view class="main">
+  <view bindtap="read" data-id="{{item.bookId}}" wx:for="{{booksList}}" wx:key="index" class="content">
+    <image src="{{item.cover}}"></image>
+    <view class="title">{{item.name}}</view>
+  </view>
+
+</view>

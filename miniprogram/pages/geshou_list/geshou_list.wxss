@@ -1,0 +1,65 @@
+/* pages/geshou_list/geshou_list.wxss */
+.kk{
+  border: 1rpx solid white;
+  height: 400rpx;
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+image{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 100%;
+}
+.kk text{
+  font-size: 16px;
+}
+.kk2{
+  border-bottom: 1rpx solid gainsboro;
+  height: 60rpx;
+  width: 750rpx;
+  display: flex;
+}
+.kk2 .ku1{
+  border-bottom: 1rpx solid gainsboro;
+  height: 60rpx;
+  width: 375rpx;
+  display: flex;
+  justify-content: center;
+}
+.kk2 .ku1 text{
+  font-size: 15px;
+  margin-top: 5rpx;
+}
+.gd{
+  border-bottom: 1rpx solid gray;
+  height: 60rpx;
+  width: 120rpx;
+  display: flex;
+  justify-content: center;
+}
+.tjk{
+  border-bottom: 1rpx solid gainsboro;
+  height: 100rpx;
+}
+.tji{
+  font-size: 16px;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+.tji2{
+  font-size: 14px;
+  margin-left: 40rpx;
+  color: gray
+}
+.xq{
+  font-size: 15px;
+  border:1px solid gainsboro;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+  margin: 30px auto;
+
+}

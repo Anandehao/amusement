@@ -1,0 +1,34 @@
+<!--pages/music_play/music_play.wxml-->
+<view class='tt'>
+  <image class='i1' src='{{image_1}}'></image>
+  <image class='i2' animation="{{animation}}" src='{{image_1}}'></image>
+  <view class='name'>
+    <view class='kk1'></view>
+    <view class='kk2'>
+      <input disabled value='{{music}}'></input>
+      <input class='nana' disabled value='{{name}}'></input>
+    </view>
+    <view class='kk1'></view>
+  </view>
+  <view wx:if="{{tt}}">
+    <image class='i3' bindtap='play' src='/images/b3.png'></image>
+  </view>
+  <view wx:else>
+    <image class='i3' bindtap='stop' src='/images/b4.png'></image>
+  </view>
+  <image class='i4' bindtap="playLast" src='/images/b1.png'></image>
+  <image class='i5' bindtap="playNext" src='/images/b2.png'></image>
+  <slider bindchange='change' block-size='14' min="0" max='{{timez}}' value='{{time}}' class='gdt'></slider>
+  <view class='q'>
+    <text>{{time_q}}</text>
+  </view>
+  <view class='h'>
+    <text>{{time_h}}</text>
+  </view>
+  <block wx:if="{{ff1==false}}">
+    <image bindtap="add_like" class='xin' src='/images/xin.png'></image>
+  </block>
+  <block wx:else>
+    <image bindtap='add_notlike' class='xin' src='/images/hongxin.png'></image>
+  </block>
+</view>

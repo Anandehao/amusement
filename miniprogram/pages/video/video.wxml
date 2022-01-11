@@ -1,0 +1,26 @@
+<!--pages/video/video.wxml-->
+<!-- 发现 -->
+<view wx:if="{{tt1}}" class="faxian">
+  <view class="topNav">
+    <view class="item3" bindtap="fx">发现</view>
+    <view class="item4" bindtap="jx">精选</view>
+  </view>
+  <view wx:if="{{t_item}}" class="items">
+    <view bindtap="cate" data-name='0'>网红</view>
+    <view bindtap="cate" data-name='1'>明星</view>
+    <view bindtap="cate" data-name='2'>热舞</view>
+    <view bindtap="cate" data-name='3'>风景</view>
+    <view bindtap="cate" data-name='4'>游戏</view>
+    <view bindtap="cate" data-name='5'>动物</view>
+  </view>
+  <view class="fxVideo">
+    <video object-fit="fill" auto-pause-if-open-native bindended="Fxended" autoplay="true" src="{{Fxplay}}"></video>
+  </view>
+</view>
+<!-- 精选 -->
+<view wx:if="{{tt2}}"  class="tuijian">
+    <view class="item1" bindtap="fx">发现</view>
+    <view class="item2" bindtap="jx">精选</view>
+    <video object-fit="fill" auto-pause-if-open-native bindended="Jxended" autoplay="true" src="{{Video}}"></video>
+    <view style="height: 15vh;"></view>
+</view>

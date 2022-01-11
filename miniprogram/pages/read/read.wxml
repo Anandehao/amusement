@@ -1,0 +1,64 @@
+<!-- 搜索框  -->
+<view class='cx3'>
+  <view class='cx'>
+    <icon class="searchcion" size='20' type='search'></icon>
+    <input bindinput='sousuo' bindfocus='tt' confirm-type='search' placeholder='搜索'></input>
+  </view>
+</view>
+<view wx:if="{{tt}}">
+  <view class='mian'>
+    <view wx:for="{{books_cs}}" wx:key="ee" bindtap="st" data-name='{{item.author}}' data-id='{{item._id}}'>
+      <view class='cx1' >
+        <input disabled value='{{item.title}}'></input>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 轮播 -->
+<swiper class='lb' indicator-dots autoplay circular interval='3000'>
+  <swiper-item><image src="/images/lb_1.jpg"></image></swiper-item>
+  <swiper-item><image src="/images/lb_2.jpg"></image></swiper-item>
+  <swiper-item><image src="/images/lb_3.jpg"></image></swiper-item>
+  <swiper-item><image src="/images/lb_4.jpg"></image></swiper-item>
+</swiper>
+
+<!-- 导航 -->
+<view class="dh">
+  <view class="dh_item" bindtap="press">
+    <image src="/images/fenlei.png"></image>
+    <view>书架</view>
+  </view>
+  <view class="dh_item" bindtap="paihang">
+    <image src="/images/paihangbang.png"></image>
+    <view>排行</view>
+  </view>
+  <view class="dh_item" bindtap="nansheng">
+    <image src="/images/nansheng.png"></image>
+    <view>男生</view>
+  </view>
+  <view class="dh_item" bindtap="nvsheng">
+    <image src="/images/nvsheng.png"></image>
+    <view>女生</view>
+  </view>
+</view>
+
+<!-- 热门推荐 -->
+
+<view class="title">热门推荐</view>
+<view  class="rmtj">
+  <view wx:for="{{rm_books}}" wx:key="index" class="rm_item" bindtap="read" data-id="{{item._id}}">
+    <image src="{{item.cover}}"></image>
+    <view class="rm_text">{{item.title}}</view>
+    <view class="rm_te">{{item.minorCate}}</view>
+  </view>
+</view>
+
+<view class="title">其他推荐</view>
+<view  class="rmtj">
+  <view wx:for="{{qt_books}}" wx:key="index" bindtap="read" data-id="{{item._id}}" class="rm_item">
+    <image src="{{item.cover}}"></image>
+    <view class="rm_text">{{item.title}}</view>
+    <view class="rm_te">{{item.minorCate}}</view>
+  </view>
+</view>

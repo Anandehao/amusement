@@ -1,0 +1,59 @@
+<!--pages/music/music.wxml-->
+<!-- 搜索 -->
+<view class='cx3'>
+  <view class='cx'>
+    <icon class="searchcion" size='20' type='search'></icon>
+    <input bindinput='sousuo' bindfocus='tt' confirm-type='search' placeholder='搜索'></input>
+  </view>
+</view>
+<view wx:if="{{tt}}">
+  <view class='mian'>
+    <view wx:for="{{music_sousuo}}" wx:key="index">
+      <view class='cx1' bindtap='st' data-name='{{item.songname}}'>
+        <input disabled value='{{item.songname}}'></input>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<!-- 轮播 -->
+<swiper class='sw' indicator-dots autoplay circular interval="3000">
+  <swiper-item wx:for="{{lunb_list}}" wx:key="index">
+    <image src='{{item.imgurl}}'></image>
+  </swiper-item>
+</swiper>
+<!-- 导航 -->
+<view class='dh'>
+  <view bindtap='gedan' class='dh1'>
+    <view>
+      <image src='/images/gedan.png'></image>
+    </view>
+    <view class='zz'>歌单</view>
+  </view>
+
+  <view bindtap='paihang' class='dh1'>
+    <view>
+      <image src='/images/paihang.png'></image>
+    </view>
+    <view class='zz'>排行</view>
+  </view>
+  <view bindtap='geshou' class='dh1'>
+    <view>
+      <image src='/images/diantai.png'></image>
+    </view>
+    <view class='zz'>歌手</view>
+  </view>
+  <view bindtap='like' class='dh1'>
+    <view>
+      <image src='/images/xihuan.png'></image>
+    </view>
+    <view class='zz'>喜欢</view>
+  </view>
+</view>
+
+<input class='tj' disabled value='--推荐--'></input>
+<view bindtap='play' data-index="{{index}}" data-hash='{{item.hash}}' class='tjk' wx:for="{{music_list}}" wx:key="index">
+  <input class='tji' disabled value='{{item.remark}}'></input>
+  <input class='tji2' disabled value='{{item.filename}}'></input>
+</view>

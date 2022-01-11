@@ -1,0 +1,53 @@
+<!--pages/music_like/music_like.wxml-->
+<!-- 北京图 -->
+<image class='beijing' src='/images/like_beijing.png'></image>
+<scroll-view style='height:100vh;' scroll-y>
+  <!-- 头部 -->
+  <view class='kuang'>
+    <view class='kk'>
+      <image src='/images/like.png'></image>
+    </view>
+    <view class='kkt'>
+      <input class='li' value='你的喜欢：' disabled></input>
+      <view class='rr'>
+        <view class="rrImage">
+          <image src="{{AvatarUrl}}"></image>
+        </view>
+        <view class="rrName">{{nickName}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 喜欢选项 -->
+  <view class="likeNav">
+    <view bindtap="likeNav" data-leftId="{{navLeft}}" class="nav {{ navLeft ? 'navBot' : 'nav'}}">歌曲</view>
+    <view bindtap="likeNav" data-rightId="{{navRight}}" class="nav {{ navLeft ? 'nav' : 'navBot'}}">歌单</view>
+  </view>
+  <!-- 歌曲内容 -->
+  <block wx:if="{{options}}">
+    <view class='like' wx:key="index" wx:for="{{list}}">
+      <image class='im' src='{{item.image}}'></image>
+      <view bindtap='play' data-id="{{index}}" data-hash='{{item.hash}}' class='tex'>
+        <input class='ip1' disabled value="{{item.music}}"></input>
+        <input class='ip2' disabled value="{{item.name}}"></input>
+      </view>
+      <view class='ima'>
+        <image bindtap='sc' data-hash='{{item._id}}' src='/images/like.png'></image>
+      </view>
+    </view>
+  </block>
+  <!-- 歌单内容 -->
+  <block wx:else>
+    <view class='like' wx:key="index" wx:for="{{songList}}">
+      <image class='im' src='{{item.imgurl}}'></image>
+    <navigator url='/pages/gedan_list/gedan_list?music={{item.music}}&&imgurl={{item.imgurl}}&&name={{item.name}}&&image={{item.image}}&&username={{item.username}}&&specialid={{item.specialid}}'>
+      <view class='tex'>
+        <input class='ip1' disabled value="{{item.name}}"></input>
+        <input class='ip2' disabled value="{{item.username}}"></input>
+      </view>
+    </navigator>
+      <view class='ima'>
+        <image bindtap='deleteSongList' data-id='{{item._id}}' src='/images/like.png'></image>
+      </view>
+    </view>
+  </block>
+</scroll-view>

@@ -1,0 +1,83 @@
+/* pages/sousuo/sousuo.wxss */
+
+.cx3 {
+  border-top: 1rpx solid gainsboro;
+}
+
+.cx {
+  margin-top: 10rpx;
+  border: 1rpx solid gainsboro;
+  width: 690rpx;
+  height: 80rpx;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+}
+
+.mian {
+  position: absolute;
+  z-index: 10;
+}
+
+.cx1 {
+  border-bottom: 1rpx solid gainsboro;
+  height: 60rpx;
+  width: 600rpx;
+  background: white;
+  margin-left: 20rpx;
+  box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(155, 152, 152, 0.301);
+}
+
+.cx1 input {
+  font-size: 12px;
+}
+
+.cx input {
+  width: 560rpx;
+  margin-left: 20rpx;
+}
+
+.cx inco {
+  margin-top: 20rpx;
+}
+.kk{
+  margin-top: 5rpx;
+  border: 1rpx solid gainsboro;
+  height: 1000rpx;
+  width: 750rpx;
+}
+.kk{
+  margin-top: 5rpx;
+  border: 1rpx solid gainsboro;
+  height: 1000rpx;
+  width: 750rpx;
+  position: absolute;
+}
+.kk{
+  margin-top: 5rpx;
+  border: 1rpx solid gainsboro;
+  height: 1000rpx;
+  width: 750rpx;
+  position: absolute;
+  z-index: 1；
+}
+.kk1{
+  border: 1rpx solid white;
+  height: 120rpx;
+}
+
+.inp1{
+  font-size: 14px;
+  width: 600rpx;
+  color: orange;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+
+.inp2{
+  font-size: 12px;
+  width: 400rpx;
+  margin-left: 20rpx;
+  color: paleturquoise;
+}

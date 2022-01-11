@@ -1,0 +1,18 @@
+<!--pages/read_paihang/read_paihang.wxml-->
+<view class="mian">
+  <view class="left">
+    <view bindtap="opt" data-index="{{index}}" data-name="{{item._id}}" class="ff {{index===titleID?'f2':'ff'}}" wx:for="{{titleList}}" wx:key="index"> {{item.title}} </view>
+  </view>
+  <scroll-view scroll-y="true" class="right">
+    <view wx:for="{{booksList}}" bindtap="content" data-id="{{item._id}}" wx:key="index" class="scrItem">
+      <view class="scrItemLeft">
+        <image src="{{item.cover}}"></image>
+      </view>
+      <view class="scrItemRight">
+        <view class="scrItemRightTitle">{{item.title}}</view>
+        <view><span class="sp1">{{item.author}}</span>  <span class="sp2">{{item.majorCate}}</span></view>
+        <view class="scrItemRightDetail">{{item.shortIntro}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

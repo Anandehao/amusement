@@ -1,0 +1,29 @@
+<!--pages/read_content/read_content.wxml-->
+<view class="main">
+  <!-- 图片 -->
+  <view class="topImg">
+    <image src="{{book.cover}}" alt="" />
+  </view>
+  <!-- 标题 -->
+  <view class="contentTitle">{{book.title}}</view>
+  <!-- 作者 -->
+  <view class="contentAuthor">{{book.author}}</view>
+  <!-- 类别 -->
+  <view class="major">
+    <view class="majorCate">{{book.majorCate}}</view>
+    <view class="majorCate">{{book.minorCateV2}}</view>
+  </view>
+  <!-- 评分 ，阅读人数 -->
+  <view class="rating">
+    <view>{{book.rating.score}}<span>分</span></view>
+    <view>{{book.rating.count}}<span>人</span></view>
+  </view>
+  <!-- 详情 -->
+  <view class="longIntro">{{book.longIntro}}</view>
+  <!-- 收藏 -->
+  <view class="collection">
+    <image wx:if="{{pick}}" bindtap="addBook" src="/images/xin.png"></image>
+    <image wx:else bindtap="cancelBook" src="/images/hongxin.png"></image>
+  </view>
+
+</view>

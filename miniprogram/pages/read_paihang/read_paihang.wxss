@@ -1,0 +1,88 @@
+/* pages/read_paihang/read_paihang.wxss */
+.mian{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.left{
+  width: 25%;
+  height: 100%;
+  background: rgb(250, 250, 250);
+}
+.ff{
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+}
+ .left .f2{
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bolder;
+  margin-top: 10px;
+} 
+.right{
+  width: 100%;
+  height: 100vh;
+}
+.right .scrItem{
+  height: 90px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  display: flex;
+}
+.right .scrItem .scrItemLeft{
+  height: 100%;
+  width: 70px;
+  border-radius: 4px;
+}
+.right .scrItem .scrItemLeft image{
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+.right .scrItem .scrItemRight{
+  height: 100%;
+  width: 170px;
+  margin-left: 20px;
+}
+.right .scrItem .scrItemRight .scrItemRightTitle{
+  font-size: 13px;
+  letter-spacing: 1px;   /* 横间距 */
+  font-weight: bolder; 
+  width: 100%;
+  overflow: hidden;
+}
+.right .scrItem .scrItemRight .sp1{
+  font-size: 10px;
+  color: rgb(172, 165, 165);
+  letter-spacing: 1px;
+}
+.right .scrItem .scrItemRight .sp2{
+  font-size: 7px;
+  height: 12px;
+  line-height: 12px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  color: gray;
+  width: 25px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+}
+.scrItemRightDetail{
+  height: 42px;
+  width: 105%;
+  font-size: 10px;
+  color: gray;
+  margin-top: 5px;
+  overflow: hidden;
+  letter-spacing: 1px;
+}

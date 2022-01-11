@@ -1,0 +1,34 @@
+<!--pages/sousuo/sousuo.wxml-->
+
+<view class='cx3'>
+  <view class='cx'>
+    <icon class="searchcion" size='20' type='search'></icon>
+    <input bindinput='sousuo' bindfocus='tt' bindconfirm='tz' confirm-type='search' value='{{name}}' placeholder='搜索'></input>
+  </view>
+</view>
+<view wx:if="{{tt}}">
+  <view class='mian'>
+    <view wx:for="{{music_sousuo}}" wx:key="">
+      <view class='cx1' bindtap='danqu' data-name='{{item.songname}}'>
+        <input value='{{item.songname}}' disabled></input>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<scroll-view class='kk' scroll-y>
+  <view wx:for="{{music_list}}" wx:key="">
+    <navigator url='/pages/music_play/music_play?hash={{item.hash}}'>
+      <view class='kk1'>
+        <view>
+          <input disabled class='inp1' value='{{item.songname}}'></input>
+        </view>
+        <view>
+          <input disabled class='inp2' value='{{item.singername}}'></input>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</scroll-view>

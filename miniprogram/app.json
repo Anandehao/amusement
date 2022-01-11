@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/video/video",
+
+    "pages/index/index",
+    "pages/user/user",
+    "pages/read/read",
+    "pages/read_bookshelf/read_bookshelf",
+    "pages/music/music",
+    "pages/music_like/music_like",
+    "pages/read_content/read_content",
+    "pages/read_gender/read_gender",
+    "pages/read_paihang/read_paihang",
+    "pages/music_play/music_play",
+    "pages/music_paihang/music_paihang",
+    "pages/music_gedan/music_gedan",
+    "pages/music_geshou/music_geshou",
+    "pages/geshou_list/geshou_list",
+    "pages/gedan_list/gedan_list",
+    "pages/paihang_list/paihang_list",
+    "pages/sousuo/sousuo"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "阿楠娱乐",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "images/music_1.png",
+        "selectedIconPath": "images/music_2.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "images/video_1.png",
+        "selectedIconPath": "images/video_2.png"
+      },
+      {
+        "pagePath": "pages/read/read",
+        "text": "小说",
+        "iconPath": "images/book_1.png",
+        "selectedIconPath": "images/book_2.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/user_1.png",
+        "selectedIconPath": "images/user_2.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}

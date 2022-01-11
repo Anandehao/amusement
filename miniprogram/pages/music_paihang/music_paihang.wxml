@@ -1,0 +1,8 @@
+<!--pages/music_paihang/music_paihang.wxml-->
+<view bindtap='bang' data-id='{{item.rankid}}' wx:for="{{music_bang}}" wx:key="index" class="kuang">
+  <image class='im1' src='{{item.imgurl}}'></image>
+  <view>
+    <input class='ip3' disabled value='{{item.rankname}}'></input>
+    <input class='ip2' disabled value='更新：{{item.update_frequency}}'></input>
+  </view>
+</view>

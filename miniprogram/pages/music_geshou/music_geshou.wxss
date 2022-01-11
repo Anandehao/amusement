@@ -1,0 +1,103 @@
+/* pages/music_geshou/music_geshou.wxss */
+
+.mian2 {
+  border: 1rpx solid gainsboro;
+  height: 70rpx;
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.hh {
+  border: 1rpx solid gray;
+  border-radius: 20px;
+  width: 700rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: center;
+  margin-left: 25rpx;
+}
+
+.hh text {
+  font-size: 16px;
+  color: gray;
+}
+
+.miku {
+  border: 1rpx solid gray;
+  border-radius: 20px;
+  width: 700rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.miku text {
+  font-size: 16px;
+  color: gray;
+}
+
+.ku {
+  border: 1rpx solid gainsboro;
+  height: 320rpx;
+  width: 750rpx;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ku1 {
+  border: 1rpx solid gray;
+  width: 200rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  
+}
+
+.ku1 text {
+  font-size: 14px;
+  color: gray;
+}
+
+.ku3 {
+  width: 750rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ip1 {
+  font-size: 16px;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  width: 750rpx;
+}
+
+.ku2 {
+  margin-top: 30rpx;
+  border: 1rpx solid white;
+  height: 230rpx;
+  width: 150rpx;
+  margin-left: 30rpx;
+  background: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ku2 image {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 100%;
+}
+
+.ku2 text {
+  font-size: 14px;
+}
+

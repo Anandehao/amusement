@@ -1,0 +1,26 @@
+<!--pages/gedan_list/gedan_list.wxml-->
+<!-- 背景图 -->
+<image class='im2' src='{{imgurl}}'></image>
+<scroll-view scroll-y class='gd'>
+  <view class='mian'>
+    <view class='kuang'>
+      <view class='ku1'>
+        <image class='im1' src='{{imgurl}}'></image>
+      </view>
+      <view class='ku2'>
+        <view class='ku3'>
+          <textarea>{{name}}</textarea>
+        </view>
+        <view class='ku4'>
+          <image src='{{image}}'></image>
+          <input disabled value='{{username}}'></input>
+          <image bindtap="songLike" data-src="{{imgSrc}}" src="{{imgSrc}}"></image>
+        </view>
+      </view>
+    </view>
+      <view bindtap='play' data-id="{{index}}" data-hash='{{item.hash}}' wx:for="{{music_list}}" wx:key="index" class='ku5'>
+        <input class='in1' disabled value='{{item.music}}'></input>
+        <input class='in2' disabled value='{{item.name}}'></input>
+      </view>
+  </view>
+</scroll-view>

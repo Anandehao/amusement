@@ -1,0 +1,24 @@
+<!--pages/music_geshou/music_geshou.wxml-->
+<view wx:if="{{tt}}">
+  <view class='ku'>
+    <view  bindtap='shang' class='hh'>
+      <text>歌手分类</text>
+    </view>
+    <view wx:for="{{music_geshou}}" wx:key="index" class='ku1'>
+      <text bindtap='geshou' data-classid='{{item.classid}}'>{{item.classname}}</text>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{tt1}}" class='mian2'>
+  <view bindtap='xia' class='miku'>
+    <text>歌手分类</text>
+  </view>
+</view>
+
+<view class='ku3'>
+  <view bindtap='gs' data-singerid='{{item.singerid}}' wx:for="{{geshou_list}}" wx:key="index" class='ku2'>
+    <image src='{{item.imgurl}}'></image>
+    <text>{{item.singername}}</text>
+  </view>
+</view>
